@@ -1,0 +1,147 @@
+body {
+    background: #000;
+    margin: 0;
+}
+.page {
+    min-width: 1280px;
+    max-width: 1280px;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0 auto;
+}
+.header {
+    border-bottom: 1px solid white;
+    padding: 16px 0;
+}
+.logo {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+.profile__photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile__name {
+    font-size: 26px;
+    color: white;
+    margin-top: 0;
+}
+.profile__info {
+    margin-left: 50px;
+}
+.button {
+    min-width: 80px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+.profile__add {
+    margin-left: auto;
+}
+
+.card-list {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+.card-list__item {
+    width: calc(100% / 4 - 30px);
+    margin: 30px 14px;
+    border: 1px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-list__item-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.card-list__item-name {
+    background: white;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    margin: 0;
+}
+
+.popup {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 11;
+}
+.popup__form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: relative;
+    padding: 60px 15px 40px;
+}
+
+.popup__close {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.cross {
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+
+.popup__input {
+    padding: 5px;
+    margin: 0px 0px 20px;
+}
+
+.popup__button {
+    color: black;
+    border-color: black;
+    margin: 10px auto;
+    padding: 5px 20px;
+}
+
+
+.page_overflow {
+    overflow: hidden;
+}
+
+.popup_active {
+    display: flex;
+}
